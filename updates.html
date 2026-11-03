@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates & Activities | Yesdin Technologies</title>
+    <meta name="description" content="Stay updated with Yesdin Technologies' latest activities, training programs, projects, events, and company milestones.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/Yesdinlogo01.jpeg" alt="Yesdin Technologies Logo" class="brand-logo">
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="service.html" class="nav-link dropdown-trigger">Our Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service.html#automation">Process Automation</a></li>
+                            <li><a href="service.html#software">Custom Software Development</a></li>
+                            <li><a href="service.html#web">Web & Digital Solutions</a></li>
+                            <li><a href="service.html#training">Technology Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="updates.html" class="nav-link active">Updates</a></li>
+                    <li><a href="index.html#partners" class="nav-link">Partners</a></li>
+                    <li><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- INNER PAGE HERO -->
+        <section class="inner-page-hero" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80');">
+            <div class="container">
+                <div class="inner-hero-content">
+                    <span class="inner-badge">Stay Informed</span>
+                    <h1>Updates & Activities</h1>
+                    <p>Follow our latest milestones, training programs, projects, and company news.</p>
+                    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                        <a href="index.html">Home</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Updates</span>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED UPDATE -->
+        <section class="featured-update padding-y">
+            <div class="container">
+                <div class="featured-card">
+                    <div class="featured-img">
+                        <img src="images/Ignite01.jpg" alt="Ignite Program — Abeokuta 2025">
+                        <span class="featured-badge">Featured</span>
+                    </div>
+                    <div class="featured-body">
+                        <div class="update-meta">
+                            <span class="update-cat training"><i class="fas fa-graduation-cap"></i> Training</span>
+                            <span class="update-date"><i class="fas fa-calendar-alt"></i> December 2024</span>
+                        </div>
+                        <h2>IGNITE Program: Empowering 200+ Youth in Abeokuta</h2>
+                        <p>Yesdin Technologies partnered with Borderless Tek to deliver an intensive digital skills training program in Abeokuta, Ogun State. Over 200 young Nigerians were equipped with practical skills in WordPress Development, Data Analytics, and Digital Marketing — free of charge. The program, supported by the Nigeria Computer Society, was one of the largest grassroot tech capacity-building initiatives in the region.</p>
+                        <div class="featured-stats">
+                            <div class="feat-stat"><strong>200+</strong><span>Participants</span></div>
+                            <div class="feat-stat"><strong>5</strong><span>Days Intensive</span></div>
+                            <div class="feat-stat"><strong>3</strong><span>Skill Tracks</span></div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary" style="margin-top:25px;">Partner with Us on the Next Program</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section class="updates-section padding-y gray-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">What's Happening</span>
+                    <h2>Recent Activities & Updates</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <!-- FILTER TABS -->
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Updates</button>
+                    <button class="filter-btn" data-filter="training">Training</button>
+                    <button class="filter-btn" data-filter="project">Projects</button>
+                    <button class="filter-btn" data-filter="event">Events</button>
+                    <button class="filter-btn" data-filter="news">News</button>
+                </div>
+
+                <!-- GALLERY GRID -->
+                <!-- To add a new card: copy a .gallery-card block, update the image, title, date, category, description, and data-category attribute -->
+                <div class="gallery-grid" id="galleryGrid">
+
+                    <div class="gallery-card" data-category="training">
+                        <div class="gallery-img-area">
+                            <img src="images/Ignite01.jpg" alt="IGNITE Program Session 1">
+                            <span class="gallery-cat training"><i class="fas fa-graduation-cap"></i> Training</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> December 2024</span>
+                            <h4>IGNITE Program — Day 1 Opening Session</h4>
+                            <p>Kickoff session of our landmark Abeokuta youth training program, with opening remarks from technology industry leaders.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="training">
+                        <div class="gallery-img-area">
+                            <img src="images/Ignite1.jpg" alt="IGNITE Program Classroom Session">
+                            <span class="gallery-cat training"><i class="fas fa-graduation-cap"></i> Training</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> December 2024</span>
+                            <h4>WordPress & Web Development Masterclass</h4>
+                            <p>Participants learning hands-on web development skills under expert instructors from the Yesdin team.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="training">
+                        <div class="gallery-img-area">
+                            <img src="images/Ignite 02.jpg" alt="Data Analytics Training Session">
+                            <span class="gallery-cat training"><i class="fas fa-graduation-cap"></i> Training</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> December 2024</span>
+                            <h4>Data Analytics for Business Track</h4>
+                            <p>Youth participants mastering Excel, data visualization, and business intelligence tools during the IGNITE program.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="training">
+                        <div class="gallery-img-area">
+                            <img src="images/Ignite3.jpg" alt="IGNITE Program Graduation">
+                            <span class="gallery-cat training"><i class="fas fa-graduation-cap"></i> Training</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> December 2024</span>
+                            <h4>Graduation & Certificate Presentation</h4>
+                            <p>Over 200 participants received their digital skills certificates at the IGNITE program closing ceremony.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="event">
+                        <div class="gallery-img-area">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Tech Conference 2025">
+                            <span class="gallery-cat event"><i class="fas fa-calendar-check"></i> Event</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> March 2025</span>
+                            <h4>Nigeria Tech Summit — Yesdin Booth</h4>
+                            <p>Our team showcased our latest automation tools and digital transformation solutions at the annual Nigeria Tech Summit in Lagos.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="project">
+                        <div class="gallery-img-area">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Enterprise Software Launch">
+                            <span class="gallery-cat project"><i class="fas fa-laptop-code"></i> Project</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> February 2025</span>
+                            <h4>School Management System — Live Deployment</h4>
+                            <p>Successfully deployed a comprehensive school management system for a leading secondary school in Lagos State, managing 1,200+ students.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="news">
+                        <div class="gallery-img-area">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80" alt="Partnership Announcement">
+                            <span class="gallery-cat news"><i class="fas fa-newspaper"></i> News</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> January 2025</span>
+                            <h4>New Partnership with Xavier Mcallister Group</h4>
+                            <p>Yesdin Technologies announces a strategic partnership with Xavier Mcallister to deliver enterprise consulting and digital transformation across Nigeria.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="training">
+                        <div class="gallery-img-area">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80" alt="Corporate ICT Training">
+                            <span class="gallery-cat training"><i class="fas fa-graduation-cap"></i> Training</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> November 2024</span>
+                            <h4>Corporate ICT Capacity Building — ATIB</h4>
+                            <p>Delivered a 3-day in-house ICT capacity building program for staff at ATIB, covering productivity tools and digital workflow management.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="project">
+                        <div class="gallery-img-area">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Automation Project">
+                            <span class="gallery-cat project"><i class="fas fa-laptop-code"></i> Project</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> October 2024</span>
+                            <h4>Workflow Automation System — Enterprise Client</h4>
+                            <p>Built and deployed a full workflow automation system that reduced manual approval processing time from 5 days to under 4 hours for a major corporate client.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="event">
+                        <div class="gallery-img-area">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Team Workshop">
+                            <span class="gallery-cat event"><i class="fas fa-calendar-check"></i> Event</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> September 2024</span>
+                            <h4>Annual Team Strategy Workshop 2024</h4>
+                            <p>The Yesdin team came together for our annual strategy and innovation workshop to align on our 2025 growth roadmap and service expansion plans.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="news">
+                        <div class="gallery-img-area">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Office Expansion">
+                            <span class="gallery-cat news"><i class="fas fa-newspaper"></i> News</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> August 2024</span>
+                            <h4>Yesdin Technologies Expands Office Space in Ikeja</h4>
+                            <p>To accommodate our growing team and expanding client base, Yesdin Technologies has expanded its operational headquarters at 121 Ogba Road, Ikeja.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="training">
+                        <div class="gallery-img-area">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80" alt="Kids Coding Program">
+                            <span class="gallery-cat training"><i class="fas fa-graduation-cap"></i> Training</span>
+                        </div>
+                        <div class="gallery-body">
+                            <span class="gallery-date"><i class="fas fa-calendar-alt"></i> July 2024</span>
+                            <h4>Digital Skills for Kids — School Holiday Program</h4>
+                            <p>Yesdin ran a summer holiday digital literacy program for secondary school students, covering graphic design, basic programming, and internet safety.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- LOAD MORE / SUBMISSION NOTE -->
+                <div class="gallery-footer-row">
+                    <p class="gallery-note"><i class="fas fa-info-circle"></i> Have company photos or videos to share? <a href="contact.html">Send them to us</a> and we'll feature them here.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO HIGHLIGHTS -->
+        <section class="video-section padding-y">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">In Motion</span>
+                    <h2>Video Highlights</h2>
+                    <div class="underline"></div>
+                    <p class="max-width-md mx-auto" style="color:var(--text-light);">Watch moments from our training programs, events, and project launches.</p>
+                </div>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <img src="images/Ignite01.jpg" alt="IGNITE Program Video">
+                            <div class="video-play-btn"><i class="fas fa-play"></i></div>
+                            <span class="video-duration">12:35</span>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-cat training">Training</span>
+                            <h4>IGNITE Program — Full Event Recap</h4>
+                            <p>Full video coverage of the landmark Abeokuta youth digital skills program.</p>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Team in Action">
+                            <div class="video-play-btn"><i class="fas fa-play"></i></div>
+                            <span class="video-duration">5:20</span>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-cat event">Behind the Scenes</span>
+                            <h4>A Day in the Life at Yesdin Technologies</h4>
+                            <p>Take a look at how our team operates, builds, and delivers world-class digital solutions.</p>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Training Highlight">
+                            <div class="video-play-btn"><i class="fas fa-play"></i></div>
+                            <span class="video-duration">8:47</span>
+                        </div>
+                        <div class="video-info">
+                            <span class="video-cat training">Training</span>
+                            <h4>Corporate ICT Training Highlight Reel</h4>
+                            <p>A compilation of our enterprise training sessions across multiple client organizations.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="video-note text-center" style="margin-top:30px;color:var(--text-light);"><i class="fas fa-video"></i> Video player feature coming soon. Contact us to view full videos or visit our social media channels.</p>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER / STAY CONNECTED -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-box">
+                    <div class="newsletter-text">
+                        <h3>Stay Connected</h3>
+                        <p>Follow us on social media to get real-time updates on our projects, training programs, and company news.</p>
+                    </div>
+                    <div class="newsletter-socials">
+                        <a href="https://www.linkedin.com/company/yesding-limited/" target="_blank" rel="noopener" class="nl-social linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="https://www.instagram.com/yesdin_ng?igsh=ZDFmc3VtZzV3Mndw&utm_source=qr" target="_blank" rel="noopener" class="nl-social instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://x.com/yesding_ng?s=21" target="_blank" rel="noopener" class="nl-social twitter"><i class="fab fa-twitter"></i> Twitter/X</a>
+                        <a href="https://www.tiktok.com/@yesdinlimited?_r=1&_t=ZS-979wT2IpTCj" target="_blank" rel="noopener" class="nl-social tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-top-channels">
+            <div class="container footer-grid-layout">
+                <div class="footer-brand-info">
+                    <img src="images/Yesdinlogo01.jpeg" alt="Yesdin Technologies" class="footer-mini-logo">
+                    <p>Co-engineering progressive, intelligent, and scalable technological ecosystems for corporate enterprise and grassroot talent acceleration across Africa.</p>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/company/yesding-limited/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/yesding_ng?s=21" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/1Fxefr8W8g/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/yesdin_ng?igsh=ZDFmc3VtZzV3Mndw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@yesdinlimited?_r=1&_t=ZS-979wT2IpTCj" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="service.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="updates.html"><i class="fas fa-chevron-right"></i> Updates</a></li>
+                        <li><a href="index.html#partners"><i class="fas fa-chevron-right"></i> Partners</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-details">
+                    <h4>Our Office</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 121 Ogba Road, Off Oba Akran, Ikeja, Lagos State, Nigeria</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:admin@yesdin.ng">admin@yesdin.ng</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:mailyesdin@gmail.com">mailyesdin@gmail.com</a></p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+2349060203705">+234 906 020 3705</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 Yesdin Technologies. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#ff6b6b;"></i> in Lagos</p>
+                <div class="social-connect-icons">
+                    <a href="https://www.linkedin.com/company/yesding-limited/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/yesding_ng?s=21" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/share/1Fxefr8W8g/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/yesdin_ng?igsh=ZDFmc3VtZzV3Mndw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@yesdinlimited?_r=1&_t=ZS-979wT2IpTCj" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>

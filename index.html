@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yesdin Technologies | Software, Automation & Digital Transformation</title>
+    <meta name="description" content="Yesdin Technologies delivers process automation, custom software, web solutions, and technology training across Nigeria and Africa.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/Yesdinlogo01.jpeg" alt="Yesdin Technologies Logo" class="brand-logo">
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="service.html" class="nav-link dropdown-trigger">Our Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service.html#automation">Process Automation</a></li>
+                            <li><a href="service.html#software">Custom Software Development</a></li>
+                            <li><a href="service.html#web">Web & Digital Solutions</a></li>
+                            <li><a href="service.html#training">Technology Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="updates.html" class="nav-link">Updates</a></li>
+                    <li><a href="#partners" class="nav-link">Partners</a></li>
+                    <li><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SLIDER -->
+        <section id="home" class="hero-slider-section">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="images/Ignite01.jpg" alt="Yesdin Training 200 Abeokuta Youth" class="slider-img">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="badge">Recent Milestone</span>
+                            <h1>Empowering Over 200 Abeokuta Youth</h1>
+                            <p>Driving impactful grassroot digital transformation through intensive, practical training in WordPress Development and Data Analytics.</p>
+                            <div class="hero-actions">
+                                <a href="about.html" class="btn btn-primary">Learn More</a>
+                                <a href="contact.html" class="btn btn-secondary">Partner With Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80" alt="Process Automation & Enterprise Technology" class="slider-img">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="badge">Enterprise Tech</span>
+                            <h1>Innovative Process Automation Solutions</h1>
+                            <p>Streamlining operational workflows and reducing business overhead costs with intelligent software architectures tailored to your enterprise.</p>
+                            <div class="hero-actions">
+                                <a href="service.html#automation" class="btn btn-primary">Our Solutions</a>
+                                <a href="contact.html" class="btn btn-secondary">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/Ignite 02.jpg" alt="Youth Technical Skill Nurturing Session" class="slider-img">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="badge">Capacity Building</span>
+                            <h1>Nurturing Future-Ready Tech Talent</h1>
+                            <p>Providing cutting-edge ICT and programming foundations for schools, corporate interns, and ambitious young professionals.</p>
+                            <div class="hero-actions">
+                                <a href="service.html#training" class="btn btn-primary">Explore Programs</a>
+                                <a href="updates.html" class="btn btn-secondary">See Our Impact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=1600&q=80" alt="Advanced Web & Digital Solutions" class="slider-img">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <span class="badge">Digital Solutions</span>
+                            <h1>Captivating & High-Performance Web Frameworks</h1>
+                            <p>We build responsive, clean, and highly user-friendly digital environments that convert visitors into loyal customers.</p>
+                            <div class="hero-actions">
+                                <a href="service.html#web" class="btn btn-primary">View Services</a>
+                                <a href="contact.html" class="btn btn-secondary">Start a Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-arrow prev-arrow" id="prevSlide" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-arrow next-arrow" id="nextSlide" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+        </section>
+
+        <!-- STATS COUNTER -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-row">
+                            <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Youth Trained</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="stat-row">
+                            <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-handshake"></i></div>
+                        <div class="stat-row">
+                            <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Corporate Clients</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-award"></i></div>
+                        <div class="stat-row">
+                            <span class="stat-number" data-target="4">0</span><span class="stat-suffix"></span>
+                        </div>
+                        <div class="stat-label">Core Service Areas</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES TEASER -->
+        <section class="services-teaser-section padding-y gray-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">What We Offer</span>
+                    <h2>Solutions Built for Modern Businesses</h2>
+                    <div class="underline"></div>
+                    <p class="max-width-md mx-auto teaser-intro">From automation to training, we deliver end-to-end technology solutions that transform how organizations operate and scale.</p>
+                </div>
+                <div class="services-teaser-grid">
+                    <a href="service.html#automation" class="service-teaser-card">
+                        <div class="teaser-img-bg" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80');"></div>
+                        <div class="teaser-body">
+                            <div class="teaser-icon"><i class="fas fa-cogs"></i></div>
+                            <h3>Process Automation</h3>
+                            <p>Eliminate repetitive tasks and boost efficiency with intelligent workflow systems and approval pipelines.</p>
+                            <span class="teaser-link">Explore Solution <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="service.html#software" class="service-teaser-card">
+                        <div class="teaser-img-bg" style="background-image:url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80');"></div>
+                        <div class="teaser-body">
+                            <div class="teaser-icon"><i class="fas fa-code"></i></div>
+                            <h3>Custom Software</h3>
+                            <p>Purpose-built enterprise applications, management systems, and CRMs coded for your exact requirements.</p>
+                            <span class="teaser-link">Explore Solution <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="service.html#web" class="service-teaser-card">
+                        <div class="teaser-img-bg" style="background-image:url('https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80');"></div>
+                        <div class="teaser-body">
+                            <div class="teaser-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h3>Web & Digital Solutions</h3>
+                            <p>High-performance websites, web applications, and UI/UX designs that captivate and convert your audience.</p>
+                            <span class="teaser-link">Explore Solution <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                    <a href="service.html#training" class="service-teaser-card">
+                        <div class="teaser-img-bg" style="background-image:url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80');"></div>
+                        <div class="teaser-body">
+                            <div class="teaser-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Technology Training</h3>
+                            <p>Hands-on tech education for individuals, corporate teams, schools, and youth community programs.</p>
+                            <span class="teaser-link">Explore Solution <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="why-section padding-y">
+            <div class="container">
+                <div class="why-layout">
+                    <div class="why-left">
+                        <span class="subheading">Our Advantage</span>
+                        <h2>Why Organizations Choose Yesdin Technologies</h2>
+                        <div class="underline" style="margin:15px 0 25px;"></div>
+                        <p class="why-intro">We don't just deliver technology — we build lasting partnerships that drive measurable outcomes. Our approach is always client-first, solution-driven, and results-focused.</p>
+                        <div class="why-image-block">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80" alt="Yesdin Technologies Team at Work" class="why-img">
+                            <div class="why-img-badge">
+                                <i class="fas fa-trophy"></i>
+                                <span>Trusted by SMEs & Enterprises</span>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary" style="margin-top:30px;display:inline-flex;align-items:center;gap:8px;">Learn More About Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="why-right">
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-bullseye"></i></div>
+                            <div class="why-text">
+                                <h4>Solution-Driven Approach</h4>
+                                <p>Every engagement begins with understanding your real business challenges — not fitting you into generic products.</p>
+                            </div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-sliders-h"></i></div>
+                            <div class="why-text">
+                                <h4>100% Customization</h4>
+                                <p>No off-the-shelf templates. Every system, application, and solution is designed and built specifically for you.</p>
+                            </div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="why-text">
+                                <h4>Efficiency & Cost Focus</h4>
+                                <p>Our systems measurably reduce operational overhead and free your team to focus on what truly drives growth.</p>
+                            </div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="why-text">
+                                <h4>Deep Technical Expertise</h4>
+                                <p>Strong capability in software engineering, automation, web development, and structured digital training programs.</p>
+                            </div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="why-text">
+                                <h4>Long-Term Partnership</h4>
+                                <p>We invest in your success beyond delivery — providing ongoing support, updates, and scaling as your business grows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-banner">
+            <div class="cta-overlay">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Ready to Transform Your Business Operations?</h2>
+                        <p>Let's build something exceptional together. Our consultants are ready to discuss your needs.</p>
+                        <div class="cta-actions">
+                            <a href="contact.html" class="btn btn-light">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+                            <a href="service.html" class="btn btn-outline-light">View All Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTNERS -->
+        <section id="partners" class="partners-section padding-y gray-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading">Corporate Synergy</span>
+                    <h2>Our Trusted Partners</h2>
+                    <div class="underline"></div>
+                    <p class="section-desc max-width-md mx-auto">Collaborating with leading educational networks and technical enterprises to co-engineer progressive ecosystems across Nigeria.</p>
+                </div>
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <div class="partner-logo-space">
+                            <img src="images/Borderless Tek Logo.png" alt="Borderless Tek" class="partner-logo">
+                        </div>
+                        <h4>Borderless Tek</h4>
+                        <p class="partner-desc">Digital skills & education partner</p>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo-space">
+                            <img src="images/Mac.png" alt="Xavier Mcallister" class="partner-logo">
+                        </div>
+                        <h4>Xavier Mcallister</h4>
+                        <p class="partner-desc">Enterprise strategy partner</p>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo-space">
+                            <img src="images/Atib.png" alt="Atib" class="partner-logo">
+                        </div>
+                        <h4>Atib</h4>
+                        <p class="partner-desc">Technology solutions partner</p>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo-space">
+                            <img src="images/NCS.png" alt="Nigeria Computer Society" class="partner-logo">
+                        </div>
+                        <h4>Nigeria Computer Society</h4>
+                        <p class="partner-desc">National ICT standards body</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-top-channels">
+            <div class="container footer-grid-layout">
+                <div class="footer-brand-info">
+                    <img src="images/Yesdinlogo01.jpeg" alt="Yesdin Technologies" class="footer-mini-logo">
+                    <p>Co-engineering progressive, intelligent, and scalable technological ecosystems for corporate enterprise and grassroot talent acceleration across Africa.</p>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/company/yesding-limited/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/yesding_ng?s=21" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/1Fxefr8W8g/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/yesdin_ng?igsh=ZDFmc3VtZzV3Mndw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@yesdinlimited?_r=1&_t=ZS-979wT2IpTCj" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="service.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="updates.html"><i class="fas fa-chevron-right"></i> Updates</a></li>
+                        <li><a href="#partners"><i class="fas fa-chevron-right"></i> Partners</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-details">
+                    <h4>Our Office</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 121 Ogba Road, Off Oba Akran, Ikeja, Lagos State, Nigeria</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:admin@yesdin.ng">admin@yesdin.ng</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:mailyesdin@gmail.com">mailyesdin@gmail.com</a></p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+2349060203705">+234 906 020 3705</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 Yesdin Technologies. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#ff6b6b;"></i> in Lagos</p>
+                <div class="social-connect-icons">
+                    <a href="https://www.linkedin.com/company/yesding-limited/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/yesding_ng?s=21" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/share/1Fxefr8W8g/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/yesdin_ng?igsh=ZDFmc3VtZzV3Mndw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@yesdinlimited?_r=1&_t=ZS-979wT2IpTCj" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>

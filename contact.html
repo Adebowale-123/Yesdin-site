@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Yesdin Technologies</title>
+    <meta name="description" content="Get in touch with Yesdin Technologies. Reach us for project consultations, training inquiries, or partnership discussions.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/Yesdinlogo01.jpeg" alt="Yesdin Technologies Logo" class="brand-logo">
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="service.html" class="nav-link dropdown-trigger">Our Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service.html#automation">Process Automation</a></li>
+                            <li><a href="service.html#software">Custom Software Development</a></li>
+                            <li><a href="service.html#web">Web & Digital Solutions</a></li>
+                            <li><a href="service.html#training">Technology Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="updates.html" class="nav-link">Updates</a></li>
+                    <li><a href="index.html#partners" class="nav-link">Partners</a></li>
+                    <li><a href="contact.html" class="nav-link contact-btn active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- INNER PAGE HERO -->
+        <section class="inner-page-hero" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&q=80');">
+            <div class="container">
+                <div class="inner-hero-content">
+                    <span class="inner-badge">Reach Out</span>
+                    <h1>Get In Touch</h1>
+                    <p>Have a project, training request, or partnership in mind? Let's start the conversation.</p>
+                    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                        <a href="index.html">Home</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Contact Us</span>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT QUICK INFO STRIP -->
+        <section class="contact-strip">
+            <div class="container">
+                <div class="contact-strip-grid">
+                    <a href="tel:+2349060203705" class="strip-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <span class="strip-label">Call Us</span>
+                            <span class="strip-value">+234 906 020 3705</span>
+                        </div>
+                    </a>
+                    <a href="mailto:admin@yesdin.ng" class="strip-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="strip-label">Email Us</span>
+                            <span class="strip-value">admin@yesdin.ng</span>
+                        </div>
+                    </a>
+                    <div class="strip-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span class="strip-label">Business Hours</span>
+                            <span class="strip-value">Mon–Fri: 8AM – 6PM WAT</span>
+                        </div>
+                    </div>
+                    <div class="strip-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="strip-label">Visit Us</span>
+                            <span class="strip-value">121 Ogba Rd, Ikeja, Lagos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT MAIN SECTION -->
+        <section id="contact" class="contact-page-section">
+            <div class="container contact-page-split">
+
+                <!-- FORM SIDE -->
+                <div class="contact-form-side">
+                    <h3>Send Us a Message</h3>
+                    <p>Fill the form below and our team will respond within 24 business hours. All enquiries are confidential.</p>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="req">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="e.g. Adewale Johnson" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="req">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company / Organization</label>
+                                <input type="text" id="company" name="company" placeholder="Your Organization">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">— Select a Service —</option>
+                                <option value="Process Automation">Process Automation</option>
+                                <option value="Custom Software Development">Custom Software Development</option>
+                                <option value="Web & Digital Solutions">Web & Digital Solutions</option>
+                                <option value="Technology Training">Technology Training</option>
+                                <option value="Partnership">Partnership / Collaboration</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject <span class="req">*</span></label>
+                            <input type="text" id="subject" name="subject" placeholder="Brief description of your inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="req">*</span></label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us about your project, requirements, or any questions you have..." required></textarea>
+                        </div>
+
+                        <div id="formFeedback" class="form-feedback" role="alert" style="display:none;"></div>
+
+                        <button type="submit" class="btn btn-submit" id="submitBtn">
+                            <span class="btn-text">Send Message <i class="fas fa-paper-plane"></i></span>
+                            <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+                        </button>
+                        <p class="form-note"><i class="fas fa-lock"></i> Your information is safe and will never be shared with third parties.</p>
+                    </form>
+                </div>
+
+                <!-- INFO SIDE -->
+                <div class="contact-info-side">
+                    <h3>Our Headquarters</h3>
+                    <div class="contact-detail-list">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-detail-text">
+                                <strong>Office Address</strong>
+                                <p>121 Ogba Rd, off Oba Akran, Ijaiye, Ikeja 100282, Lagos, Nigeria.</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-detail-text">
+                                <strong>Phone</strong>
+                                <p><a href="tel:+2349060203705">+234 906 020 3705</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-detail-text">
+                                <strong>Email</strong>
+                                <p><a href="mailto:admin@yesdin.ng">admin@yesdin.ng</a></p>
+                                <p><a href="mailto:mailyesdin@gmail.com">mailyesdin@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-detail-text">
+                                <strong>Business Hours</strong>
+                                <p>Monday – Friday: 8:00 AM – 6:00 PM WAT</p>
+                                <p>Saturday: 10:00 AM – 3:00 PM WAT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social-row">
+                        <span>Connect with us:</span>
+                        <div class="contact-social-icons">
+                            <a href="https://www.linkedin.com/company/yesding-limited/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/yesding_ng?s=21" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/share/1Fxefr8W8g/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/yesdin_ng?igsh=ZDFmc3VtZzV3Mndw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@yesdinlimited?_r=1&_t=ZS-979wT2IpTCj" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.116324668726!2d3.331926673650472!3d6.61778952206319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b917c632a07e3%3A0xb5e7c963d91fd8fd!2s121%20Ogba%20Rd%2C%20Lagos%2C%20Ikeja%20102212%2C%20Lagos!5e1!3m2!1sen!2sng!4v1781324717241!5m2!1sen!2sng"
+                            width="100%"
+                            height="280"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Yesdin Technologies Office Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-top-channels">
+            <div class="container footer-grid-layout">
+                <div class="footer-brand-info">
+                    <img src="images/Yesdinlogo01.jpeg" alt="Yesdin Technologies" class="footer-mini-logo">
+                    <p>Co-engineering progressive, intelligent, and scalable technological ecosystems for corporate enterprise and grassroot talent acceleration across Africa.</p>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/company/yesding-limited/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/yesding_ng?s=21" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/1Fxefr8W8g/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/yesdin_ng?igsh=ZDFmc3VtZzV3Mndw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@yesdinlimited?_r=1&_t=ZS-979wT2IpTCj" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="service.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="updates.html"><i class="fas fa-chevron-right"></i> Updates</a></li>
+                        <li><a href="index.html#partners"><i class="fas fa-chevron-right"></i> Partners</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-details">
+                    <h4>Our Office</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 121 Ogba Road, Off Oba Akran, Ikeja, Lagos State, Nigeria</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:admin@yesdin.ng">admin@yesdin.ng</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:mailyesdin@gmail.com">mailyesdin@gmail.com</a></p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+2349060203705">+234 906 020 3705</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="container bottom-flex">
+                <p>&copy; 2026 Yesdin Technologies. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:#ff6b6b;"></i> in Lagos</p>
+                <div class="social-connect-icons">
+                    <a href="https://www.linkedin.com/company/yesding-limited/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/yesding_ng?s=21" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/share/1Fxefr8W8g/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/yesdin_ng?igsh=ZDFmc3VtZzV3Mndw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@yesdinlimited?_r=1&_t=ZS-979wT2IpTCj" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>

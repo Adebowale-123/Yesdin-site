@@ -1,0 +1,3 @@
+.well-known.zip
+*.zip
+backend/.env
