@@ -1,0 +1,12 @@
+# Render Blueprint: a free static site (no server, never sleeps).
+# Only the public pages, styles, scripts and images are published; the unused backend folder is not.
+services:
+  - type: web
+    name: yesdin-site
+    runtime: static
+    buildCommand: "mkdir -p public && cp -r *.html *.css *.js images public/"
+    staticPublishPath: public
+    headers:
+      - path: /images/*
+        name: Cache-Control
+        value: public, max-age=604800
