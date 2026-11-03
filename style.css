@@ -802,3 +802,64 @@ img { max-width: 100%; display: block; }
     .truck-assets { padding: 24px; }
     .whatsapp-float { bottom: 20px; left: 20px; width: 50px; height: 50px; }
 }
+
+/* Yesdin-crested bus */
+.truck-hero-grid { grid-template-columns: 1fr 1.05fr; }
+.truck-hero-visual { display: flex; flex-direction: column; gap: 18px; }
+.truck-bus { width: 100%; height: auto; filter: drop-shadow(0 30px 40px rgba(0,0,0,0.45)); animation: busIn 1s ease-out both; }
+@keyframes busIn { from { opacity: 0; transform: translateX(60px); } to { opacity: 1; transform: none; } }
+.truck-hero-visual .truck-hero-card { display: grid; grid-template-columns: repeat(3, 1fr); padding: 6px 10px; }
+.truck-hero-visual .truck-hero-stat { padding: 12px 10px; border-bottom: 0; border-right: 1px solid rgba(255,255,255,0.12); text-align: center; }
+.truck-hero-visual .truck-hero-stat:last-child { border-right: 0; }
+.truck-hero-visual .truck-hero-stat b { font-size: 1.45rem; }
+.truck-hero-visual .truck-hero-stat span { font-size: 0.8rem; }
+.truck-needed-bus { width: 120px; height: auto; flex-shrink: 0; }
+.truck-band-inner { grid-template-columns: 300px 1fr auto; }
+.truck-band-bus img { width: 100%; height: auto; filter: drop-shadow(0 18px 24px rgba(0,0,0,0.4)); transition: transform 0.4s ease; }
+.truck-band-bus:hover img { transform: translateX(8px); }
+@media (prefers-reduced-motion: reduce) { .truck-bus { animation: none; } }
+@media (max-width: 1024px) {
+    .truck-hero-grid { grid-template-columns: 1fr; }
+    .truck-band-inner { grid-template-columns: 220px 1fr; }
+}
+@media (max-width: 768px) {
+    .truck-band-inner { grid-template-columns: 1fr; }
+    .truck-band-bus { max-width: 300px; }
+    .truck-hero-visual .truck-hero-stat b { font-size: 1.15rem; }
+    .truck-needed-bus { width: 90px; }
+}
+
+/* TONE: match original site colours (green + white; gold only as the small accent the site already used) */
+.truck-nav { color: inherit !important; }
+.truck-nav.active, .truck-nav:hover { color: var(--primary-color) !important; }
+.truck-nav i { color: var(--primary-color); }
+.truck-tagline { color: #fff; }
+.truck-tagline span { font-weight: 400; color: rgba(255,255,255,0.85); }
+.truck-hero-stat b, .truck-hero-visual .truck-hero-stat b { color: #fff; }
+.truck-band::after { background: rgba(255,255,255,0.06); }
+.truck-band .tb-kicker { color: rgba(255,255,255,0.75); }
+.truck-problem { border-left-color: var(--primary-color); }
+.truck-needed { background: var(--primary-light); border-color: var(--primary-color); }
+.truck-impact { background: var(--primary-color); }
+.subheading.light, .section-header .subheading.light { color: rgba(255,255,255,0.75); }
+.underline.light { background: #fff; }
+.truck-impact-card i { color: rgba(255,255,255,0.6); }
+.truck-projection { background: #fff; color: var(--primary-color); }
+.truck-projection b { color: var(--primary-color); }
+.truck-projection span { color: var(--text-light); }
+.tier-diamond { border-color: var(--primary-color); }
+.tier-diamond li i { color: #fff; }
+.tier-ribbon { background: #fff; color: var(--primary-color); }
+.tier-gold { border-top-color: var(--accent-gold); }
+.tier-community { background: var(--bg-light); }
+.truck-benefits i { color: var(--primary-color); }
+.truck-contact-line i { color: rgba(255,255,255,0.7); }
+.truck-contact-line a:hover { color: #fff; text-decoration: underline; }
+.truck-inside { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px; align-items: center; }
+.truck-inside-photo { margin: 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); max-height: 560px; }
+.truck-inside-photo img { width: 100%; height: 560px; object-fit: cover; object-position: center 40%; }
+.truck-inside-points { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+.truck-inside-points div { display: flex; gap: 10px; align-items: center; padding: 12px 14px; border-radius: var(--radius); background: var(--bg-light); font-weight: 600; font-size: 0.93rem; }
+.truck-inside-points i { color: var(--primary-color); }
+@media (max-width: 1024px) { .truck-inside { grid-template-columns: 1fr; } .truck-inside-photo img { height: 420px; } }
+@media (max-width: 768px) { .truck-inside-points { grid-template-columns: 1fr; } }
