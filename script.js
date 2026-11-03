@@ -269,3 +269,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 }); // end DOMContentLoaded
+
+
+/* ---------------------------------------------------------------------------
+   Mobile Tech Truck: pre-fill the contact form from sponsor buttons
+   (contact.html?topic=truck&tier=Gold)
+   ------------------------------------------------------------------------- */
+(function () {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('topic') !== 'truck') return;
+    const tier = (params.get('tier') || '').replace(/[^A-Za-z ]/g, '').slice(0, 20);
+    if (form.service) form.service.value = 'Mobile Tech Truck Sponsorship';
+    if (form.subject && !form.subject.value) {
+        form.subject.value = tier ? `Mobile Tech Truck sponsorship: ${tier} package` : 'Mobile Tech Truck sponsorship / partnership';
+    }
+    if (form.message && !form.message.value) {
+        form.message.value = tier
+            ? `Hello, we are interested in the ${tier} sponsorship package for the Mobile Tech Truck. Please send us more details.`
+            : 'Hello, we are interested in partnering on the Mobile Tech Truck initiative. Please send us more details.';
+    }
+})();
